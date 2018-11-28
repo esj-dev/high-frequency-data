@@ -50,6 +50,7 @@ def sim_CIR(kappa,eta,xi,T,X0,n_paths,n_steps,dt=None,seed=None):
     else:
         t_vec = np.arange(start=0,stop=T+dt,step=dt)
         n_steps = t_vec.size-1
+        T = t_vec[-1]
         
     X = np.zeros((n_paths,n_steps+1))
     X[:,0] = X0
@@ -82,8 +83,7 @@ if __name__ == "__main__":
     eta = 0.05
     xi = 2        
     X0 = 0.2
-    T = 5
-    
+    T = 5    
     
     # simulate
     X,t_vec = sim_CIR(kappa,eta,xi,T,X0,n_paths=1,n_steps=10000)
