@@ -38,7 +38,7 @@ def sim_CIR(kappa,eta,xi,T,X0,n_paths,n_steps,dt=None,seed=None):
         
     Returns
     -------
-    X,tVec : array of size n_paths x n_steps+1, array
+    X,t_vec : array of size n_paths x n_steps+1, array
         Output, paths of X and associated time points.
     
     """
@@ -50,7 +50,7 @@ def sim_CIR(kappa,eta,xi,T,X0,n_paths,n_steps,dt=None,seed=None):
     else:
         t_vec = np.arange(start=0,stop=T+dt,step=dt)
         n_steps = t_vec.size-1
-
+        
     X = np.zeros((n_paths,n_steps+1))
     X[:,0] = X0
     
