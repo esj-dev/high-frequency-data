@@ -1,5 +1,6 @@
-from .src.data.sim_cox_ingersoll_ross import target_cpa_from_roas_error
-from .src.data.sim_ornstein_uhlenbeck import sim_ornstein_uhlenbeck
+from .src.data.sim_cox_ingersoll_ross import sim_CIR
+from .src.data.sim_ornstein_uhlenbeck import sim_OU
+from .src.data.sim_3_over_2 import sim_32
 
 # PATH SIMULATION
 
