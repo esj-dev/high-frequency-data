@@ -65,7 +65,7 @@ poyo==0.4.2
 prometheus-client==0.3.1
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0
-py==1.7.0
+py==1.10.0
 Pygments==2.2.0
 pyparsing==2.2.0
 pystan==2.18.0.0
